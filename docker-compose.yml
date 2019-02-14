@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+
+  joke-mysql:
+    image: mysql:5.6
+    networks:
+      - webnet
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: healthera_admin
+      MYSQL_PASSWORD: pa55w0rd
+      MYSQL_DATABASE: HEALTHERA_TEST
+    ports: 
+      - "3307:3306"
+
+  healthera_filter:
+    image: healthera_filter
+    build: .
+    volumes: 
+      - ./:/usr/src/app
+    networks: 
+      - webnet
+    environment:
+      DB_NAME: HEALTHERA_TEST
+      DB_USER: healthera_admin
+      DB_PASSWORD: pa55w0rd
+      DB_DIALECT: mysql
+      DB_HOST: joke-mysql
+      SERVER_IP: joke-mysql
+      HTTP_LOCAL_PORT: 3000
+    command: ['npm', 'run', 'start-app-prod']
+
+    ports:
+      - 3000:3000
+    depends_on: 
+      - joke-mysql
+    links: 
+      - joke-mysql
+
+networks:
+  webnet:
