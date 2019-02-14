@@ -9,9 +9,13 @@ Healthera shares its amazing jokes to the world. This is the admin portal for ma
 * CRUD for jokes
 
 ## How to Run
-In the project directory, run
-`npm install`
-This will download all the required packages need to run the application.
+Download and install [Docker](https://www.docker.com/get-started). 
+Navigate to the project root directory and run
+`docker-compose -up` from your terminal.
+
+Navigate to your web browser and enter
+`http://localhost:3000`
+Enjoy !!!
 
 ## Frontend Configurations
 Navigate to `src/config.js`
