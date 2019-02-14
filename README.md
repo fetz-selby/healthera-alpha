@@ -11,7 +11,7 @@ Healthera shares its amazing jokes to the world. This is the admin portal for ma
 ## How to Run
 Download and install [Docker](https://www.docker.com/get-started). 
 Navigate to the project root directory and run
-`docker-compose -up` from your terminal.
+`docker-compose up` from your terminal.
 
 Navigate to your web browser and enter
 `http://localhost:3000`
