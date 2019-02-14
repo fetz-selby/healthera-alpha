@@ -1,5 +1,5 @@
 ## Introduction
-Healthera shares its amazing jokes to the world. This is the admin portal for managing all the jokes. It's a [React App](https://reactjs.org/) with [Redux](https://redux.js.org/), [Redux-Saga](https://github.com/redux-saga/redux-saga), [NodeJS](https://nodejs.org/en/), [Express](https://expressjs.com/), [JWT](https://jwt.io/), [Sequelize](http://docs.sequelizejs.com/) and [MySQL](https://www.mysql.com/). And with some utility helpers [Lodash](https://lodash.com/), [Axios](https://github.com/axios/axios) and [Jest](https://jestjs.io/) for testing the components.
+Healthera shares its amazing jokes to the world. This is the admin portal for managing all the jokes. It's a [React App](https://reactjs.org/) with [Redux](https://redux.js.org/), [Redux-Saga](https://github.com/redux-saga/redux-saga), [NodeJS](https://nodejs.org/en/), [Express](https://expressjs.com/), [JWT](https://jwt.io/), [Sequelize](http://docs.sequelizejs.com/) and [MySQL](https://www.mysql.com/). And with some utility helpers [Lodash](https://lodash.com/), [Axios](https://github.com/axios/axios), [Jest](https://jestjs.io/) for testing the components, [Swagger](https://swagger.io/) and [Docker](https://www.docker.com/) for project setup and build.
 
 ## Features
 * User based (Default cred is 'admin@healthera.com foozle')
@@ -60,6 +60,8 @@ Either create or edit the database names and user details. Default database name
 * [JWT](https://jwt.io/)
 * [Sequelize](http://docs.sequelizejs.com/)
 * [MySQL](https://www.mysql.com/)
+* [Swagger](https://swagger.io/)
+* [Docker](https://www.docker.com/)
 
 ## Live Demo
 [Healthera Joke](http://35.231.169.193:7001/) credentials `admin@healthera.com` `foozle`
